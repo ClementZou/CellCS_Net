@@ -1,3 +1,9 @@
+##### 模型
+
+0、model_name|类名称|描述
+
+1、ISTANetplus|ISTANetplus|baseline
+
 ##### 环境依赖
 
 python版本3.8.5
@@ -95,3 +101,15 @@ python train.py --layer_num 12 --gpu_list 2 --end_epoch 200 --learning_rate 1e-5
 │  		   │		     │		     │		    └──log.txt 						//记录本次测试的相关信息
 
 ...			...			...			...			
+
+#### 更新规范
+
+##### 更新模型
+
+1、在model这种添加新的类
+
+2、在train.py和test.py的加载模型的部分，加入新的if分支
+
+3、在readme的模型部分根据给出的例子给出新模型的记录
+
+4、（可选）根据模型修改训练和测试循环内的代码及loss
